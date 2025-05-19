@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodiversité Marine</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodiversité Marine</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="../img/logo.png" alt="Logo du site" class="logo">
-        <h1>Les Coraux</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="biodiversite.html">Biodiversité</a></li>
-                <li><a href="blanchissement.html">Blanchissement</a></li>
-                <li><a href="menaces.html">Menaces & Protection</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>La biodiversité des récifs coralliens</h2>
-        <p>
-            Les récifs coralliens sont parmi les écosystèmes les plus riches au monde, abritant près de 25 % de la biodiversité marine malgré leur faible surface, représentant moins de 1 % des fonds marins. Ces milieux fascinants sont souvent surnommés les « forêts tropicales de la mer » en raison de leur incroyable diversité biologique et de leur rôle écologique crucial.
-        </p>
-        <ul>
-            <li><strong>Les coraux eux-mêmes</strong> : animaux invertébrés formant la structure principale du récif. En symbiose avec des algues microscopiques appelées zooxanthelles, ils produisent leur énergie et favorisent la croissance du récif.</li>
-            <li><strong>Poissons</strong> : poissons-clowns, poissons-perroquets, mérous, murènes et bien d'autres. Ces espèces remplissent des rôles variés : prédateurs, herbivores, nettoyeurs, chacun contribuant à la régulation de l'écosystème.</li>
-            <li><strong>Invertébrés</strong> : crustacés (crabes, crevettes), mollusques (huîtres, escargots) et échinodermes (étoiles de mer, oursins). Ces organismes participent au nettoyage du récif et servent de nourriture à de nombreux prédateurs.</li>
-            <li><strong>Algues et phytoplancton</strong> : base de la chaîne alimentaire, elles nourrissent de nombreux organismes. Les algues permettent également de fixer le carbone et d’oxygéner l’eau.</li>
-            <li><strong>Micro-organismes</strong> : bactéries et champignons essentiels au recyclage des nutriments. Ils décomposent la matière organique et permettent la résilience des coraux face aux maladies.</li>
-        </ul>
-        <img src="../img/image_corail.jpg" alt="Corail">
-        <p>
-            La cohabitation entre ces organismes crée un équilibre fragile mais dynamique, où chaque espèce joue un rôle clé dans la santé globale du récif. Les interactions, qu'elles soient de compétition, de symbiose ou de prédation, assurent la stabilité du milieu. Protéger cette biodiversité, c’est préserver des milliers d’espèces, mais aussi les moyens de subsistance de millions de personnes dans le monde.
-        </p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Les Coraux. Tous droits réservés. | Contact : contact@lescoraux.org</p>
-    </footer>
+  <header>
+    <img src="../img/logo.png" alt="Logo du site" class="logo">
+    <h1>Les Coraux</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="biodiversite.html">Biodiversité</a></li>
+        <li><a href="blanchissement.html">Blanchissement</a></li>
+        <li><a href="menaces.html">Menaces & Protection</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>La biodiversité des récifs coralliens</h2>
+    <p>
+      Les récifs coralliens sont parmi les écosystèmes les plus riches au monde, abritant près de 25 % de la biodiversité marine malgré leur faible surface. Ces milieux fascinants sont souvent surnommés les « forêts tropicales de la mer » en raison de leur incroyable diversité biologique et de leur rôle écologique crucial.
+    </p>
+    <ul>
+      <li><strong>Les coraux eux-mêmes</strong> : animaux invertébrés formant la structure principale du récif en symbiose avec des algues appelées zooxanthelles.</li>
+      <li><strong>Poissons</strong> : poissons-clowns, poissons-perroquets, mérous, murènes et bien d'autres espèces régulant l'écosystème.</li>
+      <li><strong>Invertébrés</strong> : crustacés, mollusques et échinodermes contribuant à l’équilibre écologique.</li>
+      <li><strong>Algues et phytoplancton</strong> : base de la chaîne alimentaire et productrices d’oxygène.</li>
+      <li><strong>Micro-organismes</strong> : recyclent les nutriments et soutiennent la santé des coraux.</li>
+    </ul>
+
+    <div class="chatbot-container" style="position: relative; display: inline-block;">
+      <img src="../img/image_corail.jpg" alt="Bot image" id="bot-image" style="display: block; cursor: pointer;">
+      <div id="chatbot" class="hidden">
+        <div id="chatbot-header">
+          Assistant IA
+          <button id="chatbot-close" style="float: right;">✖</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Posez une question...">
+      </div>
+    </div>
+
+    <p>
+      La cohabitation entre ces organismes crée un équilibre fragile mais dynamique. Chaque espèce joue un rôle clé dans la santé du récif. Préserver cette biodiversité, c’est aussi protéger les moyens de subsistance de millions de personnes dans le monde.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Les Coraux. Tous droits réservés. | Contact : contact@lescoraux.org</p>
+  </footer>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
