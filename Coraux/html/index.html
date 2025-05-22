@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menaces et Protection</title>
+    <title>Les Coraux</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
+
+
+
+
 <body>
     <header id="main-header">
         <img src="../img/logo.png" alt="Logo du site" class="logo">
@@ -23,32 +28,46 @@
 
     <nav id="sticky-navbar" class="sticky-navbar">
         <img src="../img/logo.png" alt="Logo" class="sticky-logo">
+                <h4>Les Coraux</h4> 
                 <a href="index.html">Accueil</a>
                 <a href="biodiversite.html">Biodiversité</a>
                 <a href="blanchissement.html">Blanchissement</a>
                 <a href="menaces.html">Menaces & Protection</a>
                 <a href="a-propos.html">À propos</a>
+                
     </nav>
+
     <main>
-        <h2>Menaces et moyens de protection</h2>
-        <h3>Menaces principales</h3>
+        <h2>La biodiversité des récifs coralliens</h2>
+        <p>
+            Les récifs coralliens sont parmi les écosystèmes les plus riches au monde, abritant près de 25 % de la biodiversité marine malgré leur faible surface, représentant moins de 1 % des fonds marins. Ces milieux fascinants sont souvent surnommés les « forêts tropicales de la mer » en raison de leur incroyable diversité biologique et de leur rôle écologique crucial.
+        </p>
         <ul>
-            <li><strong>Changement climatique</strong> : réchauffement des océans, blanchissement.</li>
-            <li><strong>Acidification</strong> : baisse du pH, altération du squelette calcaire des coraux.</li>
-            <li><strong>Pollution</strong> : contaminants chimiques, plastiques, apports excessifs de nutriments.</li>
-            <li><strong>Surpêche et pêche destructive</strong> : destruction physique du récif, déséquilibre écologique.</li>
-            <li><strong>Développement côtier</strong> : érosion, sédimentation, déforestation de mangroves.</li>
+            <li><strong>Les coraux eux-mêmes</strong> : animaux invertébrés formant la structure principale du récif. En symbiose avec des algues microscopiques appelées zooxanthelles, ils produisent leur énergie et favorisent la croissance du récif.</li>
+            <li><strong>Poissons</strong> : poissons-clowns, poissons-perroquets, mérous, murènes et bien d'autres. Ces espèces remplissent des rôles variés : prédateurs, herbivores, nettoyeurs, chacun contribuant à la régulation de l'écosystème.</li>
+            <li><strong>Invertébrés</strong> : crustacés (crabes, crevettes), mollusques (huîtres, escargots) et échinodermes (étoiles de mer, oursins). Ces organismes participent au nettoyage du récif et servent de nourriture à de nombreux prédateurs.</li>
+            <li><strong>Algues et phytoplancton</strong> : base de la chaîne alimentaire, elles nourrissent de nombreux organismes. Les algues permettent également de fixer le carbone et d’oxygéner l’eau.</li>
+            <li><strong>Micro-organismes</strong> : bactéries et champignons essentiels au recyclage des nutriments. Ils décomposent la matière organique et permettent la résilience des coraux face aux maladies.</li>
         </ul>
-        <h3>Moyens de protection</h3>
-        <ul>
-            <li><strong>Aires marines protégées</strong> : zones réglementées pour préserver les habitats.</li>
-            <li><strong>Restauration de récifs</strong> : jardinage corallien, transplantation de boutures.</li>
-            <li><strong>Réduction des émissions de CO<sub>2</sub></strong> : lutte contre le changement climatique global.</li>
-            <li><strong>Pratiques de pêche durable</strong> : quotas, interdiction des méthodes destructrices.</li>
-            <li><strong>Sensibilisation et éducation</strong> : formation des communautés locales et des touristes.</li>
-        </ul>
-        <p>La combinaison de ces actions, à l'échelle locale et globale, est essentielle pour assurer l'avenir des récifs coralliens.</p>
+        <img src="../img/image_corail.jpg" alt="Corail">
+
+        <div class="chatbot-container" style="position: relative; display: inline-block;">
+        <img src="../img/image_corail.jpg" alt="Bot image" id="bot-image" style="display: block; cursor: pointer;">
+        <div id="chatbot" class="hidden">
+            <div id="chatbot-header">
+            Assistant IA
+            <button id="chatbot-close" style="float: right;">✖</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Posez une question...">
+        </div>
+        </div>
+
+        <p>
+            La cohabitation entre ces organismes crée un équilibre fragile mais dynamique, où chaque espèce joue un rôle clé dans la santé globale du récif. Les interactions, qu'elles soient de compétition, de symbiose ou de prédation, assurent la stabilité du milieu. Protéger cette biodiversité, c’est préserver des milliers d’espèces, mais aussi les moyens de subsistance de millions de personnes dans le monde.
+        </p>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-main">
@@ -82,7 +101,10 @@
             </div>
         </div>
     </footer>
+    
 
-    <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
+
+
 </body>
 </html>
