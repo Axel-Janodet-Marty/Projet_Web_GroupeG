@@ -112,6 +112,82 @@ footer {
     gap: 0.5em;
 }
 
+#main-header {
+  background-color: #007399;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navbar fixe masquée par défaut */
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #007399;
+  color: white;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+
+  /* Animation */
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none; /* empêche le clic quand masqué */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sticky-navbar.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  display: flex;
+}
+
+
+.sticky-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+/* Logo principal */
+.logo {
+  height: 25%;
+  width: 25%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Logo dans navbar fixe */
+.sticky-logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Animation progressive */
+#main-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-links {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Navbar fixe déjà configurée */
+.sticky-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: auto;
+  gap: 2em;
+  padding-left: 1em;
+}
 
 
 /* Mode sombre */
@@ -120,10 +196,10 @@ body.dark-mode {
   color: #cbb5b5;
 }
 
-body.dark-mode header,
-body.dark-mode footer {
+body.dark-mode header,body.dark-mode #main-header ,body.dark-mode footer, body.dark-mode .sticky-navbar {
   background-color: #2f2f2f;
 }
+
 
 body.dark-mode a {
   color: #8c43e4;
@@ -143,7 +219,6 @@ body.dark-mode nav ul li a.active {
   border: none;
   cursor: pointer;
 }
-
 
 #chatbot {
   position: fixed;
