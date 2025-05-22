@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biodiversité Marine</title>
-  <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menaces et Protection</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header>
-    <img src="../img/logo.png" alt="Logo du site" class="logo">
-    <h1>Les Coraux</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="biodiversite.html">Biodiversité</a></li>
-        <li><a href="blanchissement.html">Blanchissement</a></li>
-        <li><a href="menaces.html">Menaces & Protection</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-      </ul>
+    <header id="main-header">
+        <img src="../img/logo.png" alt="Logo du site" class="logo">
+        <h1>Les Coraux</h1>
+        <nav>
+            <ul class="header-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="biodiversite.html">Biodiversité</a></li>
+                <li><a href="blanchissement.html">Blanchissement</a></li>
+                <li><a href="menaces.html">Menaces & Protection</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="sticky-navbar" class="sticky-navbar">
+        <img src="../img/logo.png" alt="Logo" class="sticky-logo">
+                <a href="index.html">Accueil</a>
+                <a href="biodiversite.html">Biodiversité</a>
+                <a href="blanchissement.html">Blanchissement</a>
+                <a href="menaces.html">Menaces & Protection</a>
+                <a href="a-propos.html">À propos</a>
     </nav>
-  </header>
-
-  <main>
-    <h2>La biodiversité des récifs coralliens</h2>
-    <p>
-      Les récifs coralliens sont parmi les écosystèmes les plus riches au monde, abritant près de 25 % de la biodiversité marine malgré leur faible surface. Ces milieux fascinants sont souvent surnommés les « forêts tropicales de la mer » en raison de leur incroyable diversité biologique et de leur rôle écologique crucial.
-    </p>
-    <ul>
-      <li><strong>Les coraux eux-mêmes</strong> : animaux invertébrés formant la structure principale du récif en symbiose avec des algues appelées zooxanthelles.</li>
-      <li><strong>Poissons</strong> : poissons-clowns, poissons-perroquets, mérous, murènes et bien d'autres espèces régulant l'écosystème.</li>
-      <li><strong>Invertébrés</strong> : crustacés, mollusques et échinodermes contribuant à l’équilibre écologique.</li>
-      <li><strong>Algues et phytoplancton</strong> : base de la chaîne alimentaire et productrices d’oxygène.</li>
-      <li><strong>Micro-organismes</strong> : recyclent les nutriments et soutiennent la santé des coraux.</li>
-    </ul>
-
-    <div class="chatbot-container" style="position: relative; display: inline-block;">
-      <img src="../img/image_corail.jpg" alt="Bot image" id="bot-image" style="display: block; cursor: pointer;">
-      <div id="chatbot" class="hidden">
-        <div id="chatbot-header">
-          Assistant IA
-          <button id="chatbot-close" style="float: right;">✖</button>
+    <main>
+        <h2>Menaces et moyens de protection</h2>
+        <h3>Menaces principales</h3>
+        <ul>
+            <li><strong>Changement climatique</strong> : réchauffement des océans, blanchissement.</li>
+            <li><strong>Acidification</strong> : baisse du pH, altération du squelette calcaire des coraux.</li>
+            <li><strong>Pollution</strong> : contaminants chimiques, plastiques, apports excessifs de nutriments.</li>
+            <li><strong>Surpêche et pêche destructive</strong> : destruction physique du récif, déséquilibre écologique.</li>
+            <li><strong>Développement côtier</strong> : érosion, sédimentation, déforestation de mangroves.</li>
+        </ul>
+        <h3>Moyens de protection</h3>
+        <ul>
+            <li><strong>Aires marines protégées</strong> : zones réglementées pour préserver les habitats.</li>
+            <li><strong>Restauration de récifs</strong> : jardinage corallien, transplantation de boutures.</li>
+            <li><strong>Réduction des émissions de CO<sub>2</sub></strong> : lutte contre le changement climatique global.</li>
+            <li><strong>Pratiques de pêche durable</strong> : quotas, interdiction des méthodes destructrices.</li>
+            <li><strong>Sensibilisation et éducation</strong> : formation des communautés locales et des touristes.</li>
+        </ul>
+        <p>La combinaison de ces actions, à l'échelle locale et globale, est essentielle pour assurer l'avenir des récifs coralliens.</p>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="../img/logo.png" alt="Logo du site" class="footer-logo">
+                    <h3>Les Coraux</h3>
+                    <p>Engagés pour la préservation des récifs coralliens et la sensibilisation au blanchissement des coraux.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="blanchissement.html">Blanchissement</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Articles scientifiques</a></li>
+                        <li><a href="#">Guides pédagogiques</a></li>
+                        <li><a href="#">Actions locales</a></li>
+                        <li><a href="#">Faire un don</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
+                <p>Photos : Unsplash & Pexels</p>
+            </div>
         </div>
-        <div id="chatbot-messages"></div>
-        <input type="text" id="chatbot-input" placeholder="Posez une question...">
-      </div>
-    </div>
-
-    <p>
-      La cohabitation entre ces organismes crée un équilibre fragile mais dynamique. Chaque espèce joue un rôle clé dans la santé du récif. Préserver cette biodiversité, c’est aussi protéger les moyens de subsistance de millions de personnes dans le monde.
-    </p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Les Coraux. Tous droits réservés. | Contact : contact@lescoraux.org</p>
-  </footer>
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>
