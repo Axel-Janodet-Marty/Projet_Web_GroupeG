@@ -23,17 +23,90 @@
 
     <nav id="sticky-navbar" class="sticky-navbar">
         <img src="../img/logo.png" alt="Logo" class="sticky-logo">
+                <h4>Les Coraux</h4> 
                 <a href="index.html">Accueil</a>
                 <a href="biodiversite.html">Biodiversité</a>
                 <a href="blanchissement.html">Blanchissement</a>
                 <a href="menaces.html">Menaces & Protection</a>
                 <a href="a-propos.html">À propos</a>
+                
     </nav>
 
     <main>
         <h2>Le blanchissement des coraux</h2>
         <p>Le blanchissement des coraux est un phénomène inquiétant causé par le réchauffement des océans et d'autres stress environnementaux. Il peut mener à la mort des récifs coralliens.</p>
         <img src="images/blanchissement.jpg" alt="Corail blanchi">
+        <p>Le blanchissement se produit lorsque les coraux expulsent les algues symbiotiques (zooxanthelles) qui leur donnent leur couleur. Cela peut être causé par :</p>
+        <ul>
+            <li>Augmentation de la température de l'eau</li>
+            <li>Acidification des océans</li>
+            <li>Pollution</li>
+            <li>Problèmes de salinité</li>
+            <li>Maladies</li>
+        </ul>
+        <p>Les coraux blanchis deviennent vulnérables aux maladies et peuvent mourir si les conditions ne s'améliorent pas rapidement.</p>
+        <h3>Graphique de la population d'Acropora palmata</h3>
+        <p>Voici un graphique représentant l'évolution de la population d'Acropora palmata, une espèce de corail menacée, dans les Caraïbes entre 1970 et 2020.</p>
+            <canvas id="monGraphe" width="450" height="250" style="display:block; margin:auto; max-width:100%;"></canvas>
+        <p>Les données proviennent de <a href="https://ourworldindata.org/grapher/caribbean-acropora">Our World in Data</a>.</p>
+    </main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+        <script>
+        Papa.parse('https://ourworldindata.org/grapher/caribbean-acropora.csv?v=1&csvType=filtered&useColumnShortNames=true', {
+            download: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function(results) {
+                // Affiche les premières lignes pour vérifier les clés
+                console.log('Première ligne CSV:', results.data[0]);
+                // Cherche la bonne clé pour la colonne de données
+                const firstRow = results.data[0];
+                const keys = Object.keys(firstRow);
+                // Affiche toutes les clés pour vérifier le nom exact
+                console.log('Clés trouvées:', keys);
+
+                // Utilise la clé exacte trouvée (ici "Acropora palmata")
+                const valueKey = keys.find(k => k.toLowerCase().includes('acropora'));
+                if (!valueKey) {
+                    alert("Colonne de données non trouvée !");
+                    return;
+                }
+
+                // Filtrer les lignes valides et numériques
+                const filtered = results.data.filter(row => 
+                    row.Year && 
+                    row[valueKey] && 
+                    !isNaN(Number(row[valueKey]))
+                );
+                const labels = filtered.map(row => row.Year);
+                const data = filtered.map(row => Number(row[valueKey]));
+                console.log('labels:', labels);
+                console.log('data:', data);
+
+                if (data.length === 0) {
+                    alert("Aucune donnée valide à afficher !");
+                    return;
+                }
+
+                new Chart(document.getElementById('monGraphe').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: valueKey,
+                            data: data,
+                            borderColor: 'rgba(0,123,255,1)',
+                            backgroundColor: 'rgba(0,123,255,0.1)',
+                            fill: true
+                        }]
+                    }
+                });
+            }
+        });
+        </script>
+
+
     </main>
 
     <footer>
