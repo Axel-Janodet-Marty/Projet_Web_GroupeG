@@ -150,9 +150,9 @@ footer {
 .sticky-navbar a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  margin-left: 50px;
+  transition: color 0.3s ease;
 }
+
 
 /* Logo principal */
 .logo {
@@ -180,6 +180,10 @@ footer {
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+.sticky-navbar h4 {
+  margin-right: 150px;
+}
+
 /* Navbar fixe déjà configurée */
 .sticky-navbar {
   display: flex;
@@ -192,17 +196,17 @@ footer {
 
 /* Mode sombre */
 body.dark-mode {
-  background-color: #2a2a2a;
-  color: #cbb5b5;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 body.dark-mode header,body.dark-mode #main-header ,body.dark-mode footer, body.dark-mode .sticky-navbar {
-  background-color: #2f2f2f;
+  background-color: #354d4b;
 }
 
 
 body.dark-mode a {
-  color: #8c43e4;
+  color: #bb86fc;
 }
 
 body.dark-mode nav ul li a.active {
@@ -306,3 +310,4 @@ body.dark-mode #chatbot-messages strong {
   font-size: 1em;
   cursor: pointer;
 }
+
