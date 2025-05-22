@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <img src="../img/logo.png" alt="Logo du site" class="logo">
         <h1>Les Coraux</h1>
         <nav>
-            <ul>
+            <ul class="header-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="biodiversite.html">Biodiversité</a></li>
                 <li><a href="blanchissement.html">Blanchissement</a></li>
@@ -20,6 +20,15 @@
             </ul>
         </nav>
     </header>
+
+    <nav id="sticky-navbar" class="sticky-navbar">
+        <img src="../img/logo.png" alt="Logo" class="sticky-logo">
+                <a href="index.html">Accueil</a>
+                <a href="biodiversite.html">Biodiversité</a>
+                <a href="blanchissement.html">Blanchissement</a>
+                <a href="menaces.html">Menaces & Protection</a>
+                <a href="a-propos.html">À propos</a>
+    </nav>
     <main>
         <h2>Menaces et moyens de protection</h2>
         <h3>Menaces principales</h3>
@@ -41,7 +50,39 @@
         <p>La combinaison de ces actions, à l'échelle locale et globale, est essentielle pour assurer l'avenir des récifs coralliens.</p>
     </main>
     <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="../img/logo.png" alt="Logo du site" class="footer-logo">
+                    <h3>Les Coraux</h3>
+                    <p>Engagés pour la préservation des récifs coralliens et la sensibilisation au blanchissement des coraux.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="blanchissement.html">Blanchissement</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Articles scientifiques</a></li>
+                        <li><a href="#">Guides pédagogiques</a></li>
+                        <li><a href="#">Actions locales</a></li>
+                        <li><a href="#">Faire un don</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
+                <p>Photos : Unsplash & Pexels</p>
+            </div>
+        </div>
     </footer>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
