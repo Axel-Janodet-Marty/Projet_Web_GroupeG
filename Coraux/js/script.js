@@ -122,10 +122,37 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+////// NAVBAR ANIMATION
 
+  const stickyNavbar = document.getElementById("sticky-navbar");
+  const logo = document.querySelector(".logo");
+  const headerLinks = document.querySelector(".header-links");
 
-  // 12. Chatbot IA simple
-  // Fonction IA locale : génère une réponse en fonction des mots-clés
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    // Afficher navbar fixe au-delà de 500px
+    if (scrollY > 500) {
+      stickyNavbar.classList.add("visible");
+    } else {
+      stickyNavbar.classList.remove("visible");
+    }
+
+    // Animation progressive entre 0 et 500px
+    const progress = Math.min(scrollY / 500, 1);
+
+    // Logo réduit et se déplace à gauche
+    if (logo) {
+        logo.style.transform = `translate(${ -200 * progress }px, ${ 100 * progress }px) scale(${1 - 0.5 * progress})`;
+      logo.style.opacity = `${1 - progress}`;
+    }
+
+    if (headerLinks) {
+      headerLinks.style.transform = `translateX(${200 * progress}px)`;
+      headerLinks.style.opacity = `${1 - progress}`;
+    }
+  });
+
 function generateSmartResponse(input) {
   const smartResponses = {
     corail: [
