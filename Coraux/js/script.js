@@ -235,3 +235,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+// ...existing code...
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    createBubble();
+  }
+});
+
+function createBubble() {
+  const container = document.getElementById('bubble-container');
+  if (!container) return;
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  // Taille et position aléatoires
+  const size = Math.random() * 20 + 10;
+  bubble.style.width = `${size}px`;
+  bubble.style.height = `${size}px`;
+  bubble.style.left = `${Math.random() * 98}vw`;
+  bubble.style.background = `rgba(173,216,230,${Math.random() * 0.5 + 0.3})`;
+  container.appendChild(bubble);
+  // Supprime la bulle après l'animation
+  bubble.addEventListener('animationend', () => bubble.remove());
+}
+// ...existing code...
