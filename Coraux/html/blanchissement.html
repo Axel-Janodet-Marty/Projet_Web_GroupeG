@@ -32,24 +32,58 @@
                 
     </nav>
 
-    <main>
-        <h2>Le blanchissement des coraux</h2>
-        <p>Le blanchissement des coraux est un phénomène inquiétant causé par le réchauffement des océans et d'autres stress environnementaux. Il peut mener à la mort des récifs coralliens.</p>
-        <img src="images/blanchissement.jpg" alt="Corail blanchi">
-        <p>Le blanchissement se produit lorsque les coraux expulsent les algues symbiotiques (zooxanthelles) qui leur donnent leur couleur. Cela peut être causé par :</p>
-        <ul>
-            <li>Augmentation de la température de l'eau</li>
-            <li>Acidification des océans</li>
-            <li>Pollution</li>
-            <li>Problèmes de salinité</li>
-            <li>Maladies</li>
-        </ul>
-        <p>Les coraux blanchis deviennent vulnérables aux maladies et peuvent mourir si les conditions ne s'améliorent pas rapidement.</p>
-        <h3>Graphique de la population d'Acropora palmata</h3>
-        <p>Voici un graphique représentant l'évolution de la population d'Acropora palmata, une espèce de corail menacée, dans les Caraïbes entre 1970 et 2020.</p>
+<main>
+    <section class="blanch-section">
+        <div class="blanch-intro">
+            <h2 class="blanch-title">Le blanchissement des coraux</h2>
+            <br>
+            <div class="blanch-divider"></div>
+            <p class="blanch-desc">
+                Le blanchissement des coraux est un phénomène inquiétant causé par le réchauffement des océans et d'autres stress environnementaux. Il peut mener à la mort des récifs coralliens.
+            </p>
+        </div>
+
+        <div class="blanch-features">
+            <div class="blanch-feature-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=80" alt="Corail sain" style="width:60px;height:60px;border-radius:50%;margin-bottom:0.7em;">
+                <h3 class="blanch-feature-title">Qu'est-ce que le blanchissement ?</h3>
+                <p>Le blanchissement se produit lorsque les coraux expulsent les algues symbiotiques (zooxanthelles) qui leur donnent leur couleur et leur énergie.</p>
+            </div>
+            <div class="blanch-feature-card">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=200&q=80" alt="Stress corallien" style="width:60px;height:60px;border-radius:50%;margin-bottom:0.7em;">
+                <h3 class="blanch-feature-title">Causes principales</h3>
+                <ul style="text-align:left; margin:0 auto; display:inline-block;">
+                    <li>Augmentation de la température de l'eau</li>
+                    <li>Acidification des océans</li>
+                    <li>Pollution</li>
+                    <li>Problèmes de salinité</li>
+                    <li>Maladies</li>
+                </ul>
+            </div>
+            <div class="blanch-feature-card">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=200&q=80" alt="Corail malade" style="width:60px;height:60px;border-radius:50%;margin-bottom:0.7em;">
+                <h3 class="blanch-feature-title">Conséquences</h3>
+                <p>Les coraux blanchis deviennent vulnérables aux maladies et peuvent mourir si les conditions ne s'améliorent pas rapidement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blanch-section">
+        <div class="blanch-intro">
+            <h2 class="blanch-title">Évolution d'une espèce menacée</h2>
+            <div class="blanch-divider"></div>
+            <p class="blanch-desc">
+                Voici un graphique représentant l'évolution de la population d'<strong>Acropora palmata</strong>, une espèce de corail menacée, dans les Caraïbes entre 1970 et 2020.
+            </p>
+        </div>
+        <div class="blanch-img-main">
             <canvas id="monGraphe" width="450" height="250" style="display:block; margin:auto; max-width:100%;"></canvas>
-        <p>Les données proviennent de <a href="https://ourworldindata.org/grapher/caribbean-acropora">Our World in Data</a>.</p>
-    </main>
+        </div>
+        <p class="blanch-desc" style="text-align:center;">
+            Les données proviennent de <a href="https://ourworldindata.org/grapher/caribbean-acropora" target="_blank">Our World in Data</a>.
+        </p>
+    </section>
+</main>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
         <script>
@@ -121,9 +155,10 @@
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
+                        <li><a href="biodiversite.html">Biodiversité</a></li>
                         <li><a href="blanchissement.html">Blanchissement</a></li>
+                        <li><a href="menaces.html">Menaces & Protection</a></li>
                         <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -138,7 +173,6 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
-                <p>Photos : Unsplash & Pexels</p>
             </div>
         </div>
     </footer>
