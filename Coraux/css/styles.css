@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #faf9f5;
 }
 
 header {
@@ -311,3 +312,394 @@ body.dark-mode #chatbot-messages strong {
   cursor: pointer;
 }
 
+/* Ajoute dans styles.css */
+#bubble-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+.bubble {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgba(173, 216, 230, 0.7);
+  pointer-events: none;
+  animation: bubble-up 2s linear forwards;
+}
+@keyframes bubble-up {
+  to {
+    transform: translateY(-100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+/* Ajoute ceci à la fin de styles.css ou dans un <style> dans le <head> de menaces.html */
+
+/* Section Menaces */
+.menaces-section {
+  margin: 3em 0;
+}
+.menaces-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.menaces-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 0.5em;
+}
+.menaces-divider {
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  margin: 0 auto 1em auto;
+  border-radius: 2px;
+}
+.menaces-desc {
+  color: #003f5c;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.menaces-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.menace-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+  width: 320px;
+  max-width: 90vw;
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.menace-img {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.menace-img1 { background-image: url('https://media.istockphoto.com/id/179057833/fr/photo/vue-de-paysage-contrast%C3%A9.jpg?s=612x612&w=0&k=20&c=uunnAD779qKiw9Igx7snCUiTqMrW5YB7zBhlVvk5Wys='); }
+.menace-img2 { background-image: url('https://media.istockphoto.com/id/1141999585/fr/photo/probl%C3%A8me-mondial-sous-marin-avec-des-ordures-en-plastique.jpg?s=612x612&w=0&k=20&c=JNS568X9MWmTxAMuIDqIj6n3WO6WOR-FhMI5kJ-ta9E='); }
+.menace-img3 { background-image: url('https://www.natura-sciences.com/wp-content/uploads/2012/03/surpeche-industrielle.jpg.webp'); }
+.menace-img4 { background-image: url('https://www.fenamali.org/wp-content/uploads/2020/09/Avion-qui-pollue.jpg'); }
+.menace-img5 { background-image: url('https://media.istockphoto.com/id/1270609709/fr/vectoriel/illustration-abstraite-de-vecteur-de-concept-dacidification-doc%C3%A9an.jpg?s=612x612&w=0&k=20&c=MHrCc8d5FsqIvsVkIG28zUNO62KT4tIksnRIWVW3EFY='); }
+.menace-img6 { background-image: url('https://c8.alamy.com/compfr/kghh0p/la-maladie-de-la-bande-noire-ou-blanche-tuant-une-plaque-de-corail-acropora-grande-barriere-de-corail-queensland-australie-kghh0p.jpg'); }
+.menace-content {
+  padding: 1em 1.2em 1.2em 1.2em;
+}
+.menace-card-title {
+  color: #006994;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Section Stats */
+.stats-section {
+  margin: 3em 0;
+  text-align: center;
+}
+.stats-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 1em;
+}
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.stat-card {
+  background: #003f5c;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.5em 2em;
+  min-width: 180px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0,63,92,0.08);
+}
+.stat-value {
+  font-size: 2em;
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.stat-desc {
+  font-size: 1em;
+}
+
+/* Section Protection */
+.protection-section {
+  margin: 3em 0;
+}
+.protection-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.protection-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 0.5em;
+}
+.protection-divider {
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  margin: 0 auto 1em auto;
+  border-radius: 2px;
+}
+.protection-desc {
+  color: #003f5c;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.protection-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.protection-card {
+  background: #e0f7fa;
+  border-radius: 12px;
+  padding: 1.5em 2em;
+  min-width: 220px;
+  max-width: 320px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0,105,148,0.08);
+}
+.protection-card-title {
+  color: #006994;
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+/* Section FAQ */
+.faq-section {
+  margin: 3em 0;
+}
+.faq-title {
+  text-align: center;
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 1em;
+}
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0,105,148,0.07);
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: #e0f7fa;
+  color: #006994;
+  border: none;
+  padding: 1em;
+  font-size: 1.1em;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.faq-question:hover {
+  background: #b2ebf2;
+}
+.faq-answer {
+  display: none;
+  padding: 1em;
+  color: #003f5c;
+  background: #f4fafd;
+  font-size: 1em;
+}
+.faq-answer.open {
+  display: block;
+}
+
+.biodiv-section {
+  margin: 3em 0;
+}
+.biodiv-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.biodiv-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 0.5em;
+}
+.biodiv-divider {
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  margin: 0 auto 1em auto;
+  border-radius: 2px;
+}
+.biodiv-desc {
+  color: #003f5c;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.biodiv-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.biodiv-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+  width: 260px;
+  max-width: 90vw;
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.biodiv-img {
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.biodiv-img1 { background-image: url('https://www.wwf.fr/sites/default/files/styles/slide_image/public/2017-07/349519.jpg?h=6a260aff&itok=wS0KMgB_'); }
+.biodiv-img2 { background-image: url('https://thumbs.dreamstime.com/b/pisces-signe-zodiaque-poisson-horoscope-symbole-deux-astrologie-magique-poissons-dans-le-ciel-fantastique-nuit-p%C3%AAch%C3%A9s-copie-346239159.jpg'); }
+.biodiv-img3 { background-image: url('https://c4.wallpaperflare.com/wallpaper/121/295/779/jellyfish-cnidaria-marine-invertebrates-organism-wallpaper-thumb.jpg'); }
+.biodiv-img4 { background-image: url('https://media.istockphoto.com/id/1442403322/fr/photo/le-phytoplancton-petit-mais-puissant-est-le-travailleur-de-loc%C3%A9an-il-sert-de-base-au-r%C3%A9seau.jpg?s=612x612&w=0&k=20&c=5K-nfqVGoN2GL_EQwEaja4dBJbDuhthwt8Yyb7yUqvs='); }
+.biodiv-img5 { background-image: url('https://media.istockphoto.com/id/628978952/fr/photo/fond-microscopique-de-bact%C3%A9ries-bleues.jpg?s=612x612&w=0&k=20&c=8Ay7tAf8hvkPhs2DM9ScZ0ULMg_nVdUciJzMMOroDlE='); }
+.biodiv-content {
+  padding: 1em 1.2em 1.2em 1.2em;
+}
+.biodiv-card-title {
+  color: #006994;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.biodiv-img-main {
+  text-align: center;
+  margin: 2em 0;
+}
+.biodiv-img-main img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+}
+.biodiv-conclusion {
+  color: #003f5c;
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin: 3em 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+  padding: 2em;
+}
+.about-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.about-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 0.5em;
+}
+.about-divider {
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  margin: 0 auto 1em auto;
+  border-radius: 2px;
+}
+.about-desc {
+  color: #003f5c;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-team {
+  margin-bottom: 2em;
+}
+.about-team-title {
+  color: #006994;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.about-team-list {
+  list-style: disc inside;
+  color: #003f5c;
+  margin-left: 1em;
+}
+.about-contact-title {
+  color: #006994;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.about-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+.about-form label {
+  font-weight: bold;
+  color: #003f5c;
+}
+.about-form input,
+.about-form textarea {
+  padding: 0.7em;
+  border: 1px solid #b2ebf2;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  background: #f8f6ef;
+  resize: vertical;
+}
+.about-form button {
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+.about-form button:hover {
+  background: #0097a7;
+}
