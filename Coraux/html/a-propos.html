@@ -33,13 +33,38 @@
     </nav>
 
     <main>
-        <h2>À propos de ce site</h2>
-        <p>Ce site a été réalisé par notre groupe d'étudiants dans le cadre d'un projet de programmation web. Il a pour but de sensibiliser au rôle crucial des coraux dans les écosystèmes et les dangers du blanchissement.</p>
-        <ul>
-            <li><strong>Nom 1</strong> : contenu de la page d'accueil</li>
-            <li><strong>Nom 2</strong> : rédaction sur le blanchissement</li>
-            <li><strong>Nom 3</strong> : mise en forme CSS</li>
-        </ul>
+        <section class="about-section">
+            <div class="about-intro">
+                <h2 class="about-title">À propos de ce site</h2>
+                <div class="about-divider"></div>
+                <p class="about-desc">
+                    Ce site a été réalisé par notre groupe d'étudiants dans le cadre d'un projet de programmation web. Il a pour but de sensibiliser au rôle crucial des coraux dans les écosystèmes et les dangers du blanchissement.
+                </p>
+            </div>
+            <div class="about-team">
+                <h3 class="about-team-title">L'équipe</h3>
+                <ul class="about-team-list">
+                    <li><strong>Skander / Axel</strong> : Contenu de la page d'accueil</li>
+                    <li><strong>Skander / Axel</strong> : Rédaction sur le blanchissement</li>
+                    <li><strong>Skander / Axel</strong> : Mise en forme CSS</li>
+                </ul>
+            </div>
+            <div class="about-contact">
+                <h3 class="about-contact-title">Contactez-nous</h3>
+                <form class="about-form">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -59,9 +84,19 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Articles scientifiques</a></li>
+                        <li><a href="#">Guides pédagogiques</a></li>
+                        <li><a href="#">Actions locales</a></li>
+                        <li><a href="#">Faire un don</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Les Coraux. Tous droits réservés à Skander et Axel</p>
+                <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
+                <p>Photos : Unsplash & Pexels</p>
             </div>
         </div>
     </footer>
