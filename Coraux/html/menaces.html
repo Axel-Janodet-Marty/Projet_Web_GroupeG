@@ -175,9 +175,10 @@
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
+                        <li><a href="biodiversite.html">Biodiversité</a></li>
                         <li><a href="blanchissement.html">Blanchissement</a></li>
+                        <li><a href="menaces.html">Menaces & Protection</a></li>
                         <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -192,19 +193,9 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
-                <p>Photos : Unsplash & Pexels</p>
             </div>
         </div>
     </footer>
-    <script>
-    // Accordéon FAQ
-    document.querySelectorAll('.faq-question').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const answer = btn.nextElementSibling;
-            answer.classList.toggle('open');
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
