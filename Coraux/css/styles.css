@@ -703,3 +703,91 @@ body.dark-mode #chatbot-messages strong {
 .about-form button:hover {
   background: #0097a7;
 }
+.home-section {
+  margin: 3em 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+  padding: 2em;
+}
+.home-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.home-title {
+  font-size: 2em;
+  color: #006994;
+  margin-bottom: 0.5em;
+}
+.home-divider {
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  margin: 0 auto 1em auto;
+  border-radius: 2px;
+}
+.home-desc {
+  color: #003f5c;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.home-img-main {
+  text-align: center;
+  margin: 2em 0;
+}
+.home-img-main img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,105,148,0.08);
+}
+.home-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.home-feature-card {
+  background: #e0f7fa;
+  border-radius: 12px;
+  padding: 1.5em 2em;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0,105,148,0.08);
+  text-align: center;
+}
+.home-feature-title {
+  color: #006994;
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.home-calltoaction {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+.home-btn {
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.home-btn.secondary {
+  background: #006994;
+}
+.home-btn:hover {
+  background: #0097a7;
+}
