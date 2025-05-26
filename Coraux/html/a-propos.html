@@ -64,9 +64,21 @@
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
-        </section>
-    </main>
 
+        </section>
+
+        <div id="chatbot" class="hidden">
+            <div id="chatbot-header">
+                Assistant IA
+                <button id="chatbot-close" style="float: right;">✖</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Posez une question...">
+        </div>
+    </main>
+        <div class="chatbot-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Bot image" id="bot-image" style="position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; cursor: pointer; z-index: 1001;">
+        </div>
     <footer>
         <div class="footer-container">
             <div class="footer-main">
@@ -79,9 +91,10 @@
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
+                        <li><a href="biodiversite.html">Biodiversité</a></li>
                         <li><a href="blanchissement.html">Blanchissement</a></li>
+                        <li><a href="menaces.html">Menaces & Protection</a></li>
                         <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -96,7 +109,6 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Les Coraux. Tous droits réservés.</p>
-                <p>Photos : Unsplash & Pexels</p>
             </div>
         </div>
     </footer>
