@@ -31,11 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 100);
   }
 
-  // 4. Parallaxe sur l’image
-  const img = document.querySelector('main img');
-  window.addEventListener('scroll', () => {
-    if (img) img.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-  });
+
 
   // 5. Animation des sections au scroll
   const observer = new IntersectionObserver((entries, obs) => {
@@ -73,17 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
   });
 
-  // 8. Bouton retour en haut
-  const topBtn = document.createElement('button');
-  topBtn.id = 'back-to-top';
-  topBtn.textContent = '↑';
-  document.body.appendChild(topBtn);
-  topBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-  window.addEventListener('scroll', () => {
-    topBtn.classList.toggle('show', window.scrollY > 300);
-  });
 
   // 9. Surbrillance dynamique du lien actif
   const sections = document.querySelectorAll('main, section');
@@ -221,7 +206,7 @@ function appendChatMessage(sender, text) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const botImg = document.querySelector(".chatbot-container img");
+  const botImg = document.getElementById("bot-image");
   const chatbot = document.getElementById("chatbot");
   const closeBtn = document.getElementById("chatbot-close");
 
@@ -261,3 +246,11 @@ function createBubble() {
   bubble.addEventListener('animationend', () => bubble.remove());
 }
 // ...existing code...
+    // Accordéon FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            answer.classList.toggle('open');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
